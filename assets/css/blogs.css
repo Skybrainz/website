@@ -1,0 +1,126 @@
+/* For Carousel */
+
+.blogs {
+  position: relative;
+  height: 100%;
+}
+
+.blogs {
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blogs .swiper {
+  width: 720px;
+  max-width: 100vw;
+}
+
+.blogs .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.blogs .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blogs .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  border-radius: 5px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.blogs .swiper-pagination-bullet-active {
+  color: black;
+  background: lightgreen;
+}
+
+/* For cards */
+
+.blogs .item {
+  width: 350px;
+  height: 400px;
+  color: black;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.blogs .item-background {
+  width: 100%;
+  height: 80%;
+  border-radius: 5px;
+  background: url("https://images.unsplash.com/photo-1644843521798-13d5c423fa4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNTF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60")
+    center center/cover;
+}
+
+.blogs .item-content {
+  position: relative;
+  top: -2rem;
+  width: 70%;
+  height: 82px;
+  margin: auto;
+  padding: 0.5rem 1rem;
+  background-color: lightgreen;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: top 0.2s ease-in-out;
+}
+
+.blogs .item-content:hover {
+  top: -2.5rem;
+}
+
+.blogs .title {
+  display: flex;
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.blogs .title > .separator {
+  margin: 0 0.5rem;
+  width: 0%;
+  border-left: 2px solid grey;
+}
+
+.blogs .description {
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1;
+  margin: 4px 0;
+}
+
+.blogs .read-more {
+  text-align: right;
+  font-size: 0.8rem;
+  color: slategray;
+  text-decoration: none;
+}
