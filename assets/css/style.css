@@ -8896,6 +8896,8 @@ ML About CSS
 .about-area {
   position: relative;
   z-index: 1;
+  background: -webkit-gradient(linear, right top, left bottom, from(#b8f3df), color-stop(#fbfaff), color-stop(#effbff), color-stop(#e0fdff), to(#b8f3df));
+  background: linear-gradient(to left bottom, #b8f3df, #b8f3df, #effbff, #e0fdff, #b8f3df);
 }
 
 .ml-about-img {
